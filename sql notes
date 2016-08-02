@@ -1,4 +1,4 @@
-table constituents
+table constituents has_many notes, calls
   constituent_id Integer
   member_name Text
   issue text
@@ -9,7 +9,7 @@ table constituents
   date_created date & time
   assigned_to string
 
-table notes
+table notes belongs_to constituents
   note_id integer
   note text
   constituent_id integer
@@ -17,12 +17,12 @@ table notes
   Date_Updated date & time
   cca string
 
-Table contacts
+Table contacts has_many calls
   contact_id number
   name Text
   office text
   phone text
 
-Table calls
+Table calls belongs_to contacts, constituents
   constituent_id
   contact_id
