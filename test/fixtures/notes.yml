@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  note: MyText
+  constituent_id: 1
+  cca: MyString
+
+two:
+  note: MyText
+  constituent_id: 1
+  cca: MyString
