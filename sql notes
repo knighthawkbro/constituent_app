@@ -3,7 +3,7 @@ table constituents
   member_name Text
   issue text
   status string
-  info_id integer
+  contact_information text
   psi boolean
   contact_id integer
   date_created date & time
@@ -17,12 +17,12 @@ table notes
   Date_Updated date & time
   cca string
 
-Table Contacts
+Table contacts
   contact_id number
   name Text
   office text
   phone text
 
-Table Calls
-    constituent_id
-    contact_id
+Table calls
+  constituent_id
+  contact_id

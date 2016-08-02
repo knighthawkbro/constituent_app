@@ -1,0 +1,52 @@
+<%= form_for(constituent) do |f| %>
+  <% if constituent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(constituent.errors.count, "error") %> prohibited this constituent from being saved:</h2>
+
+      <ul>
+      <% constituent.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :member_name %>
+    <%= f.text_field :member_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :issue %>
+    <%= f.text_area :issue %>
+  </div>
+
+  <div class="field">
+    <%= f.label :status %>
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contact_info %>
+    <%= f.text_field :contact_info %>
+  </div>
+
+  <div class="field">
+    <%= f.label :psi %>
+    <%= f.check_box :psi %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contact_id %>
+    <%= f.number_field :contact_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :assigned_to %>
+    <%= f.text_field :assigned_to %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
