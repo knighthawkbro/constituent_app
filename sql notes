@@ -1,0 +1,28 @@
+table constituents
+  constituent_id Integer
+  member_name Text
+  issue text
+  status string
+  info_id integer
+  psi boolean
+  contact_id integer
+  date_created date & time
+  assigned_to string
+
+table notes
+  note_id integer
+  note text
+  constituent_id integer
+  Date_Created date & time
+  Date_Updated date & time
+  cca string
+
+Table Contacts
+  contact_id number
+  name Text
+  office text
+  phone text
+
+Table Calls
+    constituent_id
+    contact_id
