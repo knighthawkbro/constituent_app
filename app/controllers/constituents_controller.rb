@@ -15,6 +15,7 @@ class ConstituentsController < ApplicationController
   # GET /constituents/new
   def new
     @constituent = Constituent.new
+    @contact = Contact.new
   end
 
   # GET /constituents/1/edit
@@ -69,6 +70,8 @@ class ConstituentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def constituent_params
-      params.require(:constituent).permit(:member_name, :issue, :status, :contact_info, :psi, :contact_id, :assigned_to)
+      params.require(:constituent).permit(:member_name, 
+        :issue, :status, :contact_info, :psi, :contact_id, 
+        :assigned_to)
     end
 end

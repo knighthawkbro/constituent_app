@@ -35,7 +35,7 @@
     <%= f.label :psi %>
     <%= f.check_box :psi %>
   </div>
-
+  
   <div class="field">
     <%= f.label :contact_id %>
     <%= f.number_field :contact_id %>
@@ -43,7 +43,7 @@
 
   <div class="field">
     <%= f.label :assigned_to %>
-    <%= f.text_field :assigned_to %>
+    <%= f.select :assigned_to, ['Beth', 'Nina', 'Rebekah'], include_blank:true %>
   </div>
 
   <div class="actions">
